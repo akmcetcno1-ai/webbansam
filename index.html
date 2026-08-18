@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sâm Thượng Hạng - Cửa Hàng Bán Sâm Uy Tín</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm 12mm;
+            background-color: #f8f9fa;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #2c3e50;
+            line-height: 1.5;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        .header {
+            background-color: #1e3a2b;
+            color: #ffffff;
+            padding: 16pt 20pt;
+            border-radius: 6px;
+            margin-bottom: 20pt;
+        }
+
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .logo {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .nav-links {
+            text-align: right;
+            font-size: 10pt;
+            color: #ffffff;
+        }
+
+        .nav-links span {
+            margin-left: 12pt;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background-color: #2d5a3f;
+            color: #ffffff;
+            padding: 24pt 20pt;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 24pt;
+        }
+
+        .hero h1 {
+            font-size: 20pt;
+            color: #d4af37;
+            margin-bottom: 8pt;
+        }
+
+        .hero p {
+            font-size: 11pt;
+            opacity: 0.95;
+            margin-bottom: 14pt;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #1e3a2b;
+            padding: 6pt 16pt;
+            font-weight: bold;
+            font-size: 10pt;
+            border-radius: 4px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 15pt;
+            color: #1e3a2b;
+            border-left: 4px solid #d4af37;
+            padding-left: 8pt;
+            margin-bottom: 14pt;
+            margin-top: 10pt;
+            page-break-after: avoid;
+        }
+
+        /* Product Table / Cards layout using table */
+        .products-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 12pt 0;
+            margin-left: -12pt;
+            margin-right: -12pt;
+            margin-bottom: 20pt;
+        }
+
+        .product-card {
+            width: 33.33%;
+            vertical-align: top;
+            background: #ffffff;
+            border: 1px solid #e1e8e5;
+            border-radius: 6px;
+            padding: 14pt;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .product-title {
+            font-size: 11pt;
+            color: #1e3a2b;
+            font-weight: bold;
+            margin-bottom: 6pt;
+        }
+
+        .product-desc {
+            font-size: 9pt;
+            color: #555555;
+            margin-bottom: 10pt;
+            height: 42pt;
+        }
+
+        .product-price {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #c0392b;
+            margin-bottom: 10pt;
+        }
+
+        .btn-add {
+            background-color: #1e3a2b;
+            color: #ffffff;
+            text-align: center;
+            padding: 6pt;
+            font-size: 9pt;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        /* Features Section */
+        .features-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10pt;
+            margin-bottom: 20pt;
+        }
+
+        .feature-box {
+            width: 33.33%;
+            padding: 12pt;
+            background-color: #ffffff;
+            border: 1px solid #e1e8e5;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            font-size: 11pt;
+            color: #1e3a2b;
+            margin-bottom: 4pt;
+        }
+
+        .feature-box p {
+            font-size: 8.5pt;
+            color: #666666;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1e3a2b;
+            color: #ffffff;
+            text-align: center;
+            padding: 14pt;
+            border-radius: 6px;
+            font-size: 9pt;
+            margin-top: 20pt;
+        }
+
+        .footer p {
+            margin-bottom: 3pt;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <table class="header-table">
+            <tr>
+                <td class="logo">🌿 SÂM THƯỢNG HẠNG</td>
+                <td class="nav-links">
+                    <span>Trang Chủ</span>
+                    <span>Sản Phẩm</span>
+                    <span>Cam Kết</span>
+                    <span>Giỏ Hàng (0)</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <h1>Sâm Củ Chính Hãng - Dưỡng Sinh Quốc Bảo</h1>
+        <p>Chuyên cung cấp các dòng Nhân sâm Hàn Quốc, Sâm Ngọc Linh cao cấp 100% tự nhiên.</p>
+        <div class="badge">SẢN PHẨM MỚI NHẤT 2026</div>
+    </div>
+
+    <!-- Sản Phẩm Nổi Bật -->
+    <div class="section-title">Sản Phẩm Nổi Bật</div>
+    
+    <table class="products-table">
+        <tr>
+            <!-- Product 1 -->
+            <td class="product-card">
+                <div class="product-title">Sâm Tươi Hàn Quốc (6 Năm Tuổi)</div>
+                <div class="product-desc">Củ sâm tươi nguyên chất nhập khẩu trực tiếp từ Geumsan, bổ sung sinh lực toàn diện.</div>
+                <div class="product-price">2.800.000 ₫ / Kg</div>
+                <div class="btn-add">Thêm Vào Giỏ</div>
+            </td>
+
+            <!-- Product 2 -->
+            <td class="product-card">
+                <div class="product-title">Hồng Sâm Củ Khô Hộp Thiếc</div>
+                <div class="product-desc">Hồng sâm chế biến cao cấp, lưu trữ được lâu, thích hợp làm quà biếu sang trọng.</div>
+                <div class="product-price">1.950.000 ₫</div>
+                <div class="btn-add">Thêm Vào Giỏ</div>
+            </td>
+
+            <!-- Product 3 -->
+            <td class="product-card">
+                <div class="product-title">Cao Hồng Sâm Đậm Đặc</div>
+                <div class="product-desc">Chiết xuất hồng sâm nguyên chất, tiện lợi sử dụng hàng ngày cho người bận rộn.</div>
+                <div class="product-price">1.200.000 ₫</div>
+                <div class="btn-add">Thêm Vào Giỏ</div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Cam kết -->
+    <div class="section-title">Tại Sao Chọn Chúng Tôi?</div>
+    <table class="features-table">
+        <tr>
+            <td class="feature-box" style="margin-right: 6pt;">
+                <h3>📜 Nguồn Gốc Rõ Ràng</h3>
+                <p>Đầy đủ giấy tờ kiểm định CO/CQ và An toàn vệ sinh thực phẩm.</p>
+            </td>
+            <td style="width: 10pt;"></td>
+            <td class="feature-box">
+                <h3>🚀 Giao Hàng Hỏa Tốc</h3>
+                <p>Đóng gói cẩn thận, giao hàng toàn quốc nhanh chóng.</p>
+            </td>
+            <td style="width: 10pt;"></td>
+            <td class="feature-box">
+                <h3>💎 Cam Kết 200%</h3>
+                <p>Đền bù gấp đôi nếu phát hiện hàng giả, hàng kém chất lượng.</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2026 Sâm Thượng Hạng. Tất cả quyền được bảo lưu.</p>
+        <p>Địa chỉ: 123 Đường Sâm Quy, Quận 1, TP. Hồ Chí Minh | Hotline: 0900 123 456</p>
+    </div>
+
+</body>
+</html>
